@@ -9,6 +9,5 @@ class Product(models.Model):
     price = models.DecimalField(decimal_places=2, max_digits=10)
     created = models.DateField(auto_now_add=True)
     updated = models.DateField(auto_now=True)
-    image = models.ImageField(null=True, blank=True,
-                              default='/placeholder.png')
-
+    image = models.ImageField(null=True, blank=True,default='/placeholder.png')
+    
